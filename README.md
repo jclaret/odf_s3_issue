@@ -9,7 +9,7 @@ $ podman push quay.io/jclaret/s3image
 
 $ oc new-project s3-testing
 $ oc create -f 01-ObjectBucketClaim.yaml
-$ oc get ocm
+$ oc get obc
 $ oc get secret
 $ oc create -f 02-sample.yaml - change S3URL / AWSACCESSKEYID / AWSSECRETACCESSKEY / BUCKET
 
