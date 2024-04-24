@@ -1,0 +1,10 @@
+---
+apiVersion: objectbucket.io/v1alpha1
+kind: ObjectBucketClaim
+metadata:
+  name: "s3-testing"
+  namespace: s3-testing
+spec:
+  generateBucketName: "s3-testing"
+  storageClassName: openshift-storage.noobaa.io
+---
