@@ -3,13 +3,13 @@
 OCP 4.12.44 / ODF 4.12.12
 
 ```bash
-$ podman build -t s3image .
-$ podman tag localhost/s3image quay.io/jclaret/s3image
-$ podman push quay.io/jclaret/s3image
+$ podman build -t s3image-fedora .
+$ podman tag localhost/s3image quay.io/jclaret/s3image-fedora
+$ podman push quay.io/jclaret/s3image-fedora
 
 $ oc new-project s3-testing
 $ oc create -f 01-ObjectBucketClaim.yaml
-$ oc get obc
+$ oc get ocm
 $ oc get secret
 $ oc create -f 02-sample.yaml - change S3URL / AWSACCESSKEYID / AWSSECRETACCESSKEY / BUCKET
 
